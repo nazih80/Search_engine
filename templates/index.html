@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Recherche</title>
+		<link rel="stylesheet" href="static/style.css" />
+	</head>
+
+	<body>
+		<div class="center-div">
+			<img src="static/img.png" />
+		</div>
+		<br />
+		<div class="center-div">
+			<form class="barreRecherche" method="get">
+				<input type="text" name="requête" placeholder="Vous pouvez rechercher des articles concernants la CAN 2024" autofocus />
+				<input type="submit" value="Rechercher"></input>
+			</form>
+		</div>
+    {% if introuvable %}
+      <h1>Aucun résultat trouvé!</h1>
+    {% endif %}
+    {% if résultat %}
+    <h1>Résultats de la recherche: "{{requête}}"</h1>
+    <ol>
+      {% for titre in résultat %}
+        <li><a href="static/{{titre}}.pdf">{{titre}}</a></li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+	</body>
+</html>

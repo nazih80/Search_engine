@@ -1,0 +1,61 @@
+body {
+	background-color: #094334;
+}
+
+.center-div {
+	display: flex;
+	justify-content: center;
+}
+
+.barreRecherche {
+	width: 800px;
+	display: flex;
+	background-color: rgb(207, 151, 0);
+	padding: 20px;
+	border-radius: 6px;
+	text-align: center;
+}
+.barreRecherche [type="text"] {
+	width: calc(100% - 160px);
+	padding: 10px;
+	padding-left: 20px;
+	outline: none;
+	background-color: rgb(248, 246, 249);
+	border: 1px solid #fff;
+	border-radius: 6px 0 0 6px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.barreRecherche [type="submit"] {
+	width: 150px;
+	background-color: rgb(196, 55, 4);
+	border: #fff;
+	color: white;
+	border-radius: 0 6px 6px 0;
+	cursor: pointer;
+}
+
+h1 {
+	color: rgb(207, 151, 0);
+	text-align: center;
+	padding-top: 30px;
+	font-size: 60px;
+}
+
+ol {
+	text-align: justify;
+	list-style-position: inside;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+a {
+	font-size: 30px;
+	color: white;
+}
+
+li::marker {
+	color: rgb(196, 55, 4);
+	font-size: 30px;
+}
